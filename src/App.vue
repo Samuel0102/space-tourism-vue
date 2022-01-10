@@ -33,6 +33,7 @@ export default {
   @apply relative;
   background: url('assets/img/crew/background-crew-mobile.jpg');
   background-size: cover;
+  font-family: 'Barlow Condensed';
 }
 
 p{
@@ -41,4 +42,7 @@ p{
   color: #D0D6F9;
 }
 
+hr {
+  border: 0.1px solid #383b4b;
+}
 </style>

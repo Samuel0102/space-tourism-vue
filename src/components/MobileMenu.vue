@@ -4,7 +4,7 @@
       <ul>
         <li>
           <router-link to="/">
-            <strong>0</strong><span> HOME</span>
+            <strong>00</strong><span> HOME</span>
           </router-link>
         </li>
         <li>
@@ -29,7 +29,6 @@ export default {};
 
 <style lang="scss" scoped>
 #mobile-menu {
-  font-family: "Barlow Condensed";
   background: rgba(255, 255, 255, 4%);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);

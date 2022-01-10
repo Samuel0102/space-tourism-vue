@@ -23,8 +23,8 @@
     
     <div id="slide-info" class="uppercase">
       <div>
-        <h3 class="title">AVG. Distance</h3>
-        <h4 class="info text-2xl">{{ currentSlide.avgDistance }}</h4>
+        <span class="title">AVG. Distance</span>
+        <span class="info text-2xl">{{ currentSlide.avgDistance }}</span>
       </div>
       <div class="mt-8">
         <span class="title">EST. Travel Time</span>
@@ -83,7 +83,4 @@ h2,
   }
 }
 
-hr {
-  border: 0.1px solid #383b4b;
-}
 </style>

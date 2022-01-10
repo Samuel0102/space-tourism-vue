@@ -69,7 +69,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-* {
-  font-family: "Barlow Condensed";
-}
 </style>
