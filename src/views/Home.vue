@@ -1,5 +1,5 @@
 <template>
-  <section class="home px-6 mt-5 text-center">
+  <section class="home px-6 mt-5 pb-10 text-center">
     <div id="text-content" class="text-white">
       <span class="uppercase text-xs">So, you want to travel to</span>
       <h1 class="text-7xl pt-5 pb-8">SPACE</h1>
@@ -10,11 +10,11 @@
         experience!
       </p>
     </div>
-  </section>
 
-  <div id="home-button" class="mt-14 w-32 py-12 rounded-full text-center bg-white mx-auto">
-    <h3 id="btn-text">EXPLORE</h3>
-  </div>
+    <div id="home-button" class="mt-14 w-32 py-12 rounded-full text-center bg-white mx-auto">
+      <h3 id="btn-text">EXPLORE</h3>
+    </div>
+  </section>
 </template>
 
 <script>

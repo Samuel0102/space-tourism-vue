@@ -17,7 +17,11 @@
             <strong>02</strong><span>  CREW</span>
           </router-link>
         </li>
-        <li><strong>03</strong><span> TECHNOLOGY</span></li>
+        <li>
+          <router-link to="/technology">
+            <strong>03</strong><span>  TECHNOLOGY</span>
+          </router-link>
+        </li>
       </ul>
     </nav>
   </div>
