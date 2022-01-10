@@ -1,42 +1,44 @@
 <template>
-    <div id="mobile-menu" class="absolute right-0 w-9/12 h-screen">
-        <nav class="m-8">
-            <ul>
-                <li><strong>00</strong><span> HOME</span></li>
-                <li><strong>01</strong><span> DESTINATION</span></li>
-                <li><strong>02</strong><span> CREW</span></li>
-                <li><strong>03</strong><span> TECHNOLOGY</span></li>
-            </ul>
-        </nav>
-    </div>
+  <div id="mobile-menu" class="absolute z-10 top-0 right-0 w-9/12 h-full">
+    <nav class="mt-20 mx-8">
+      <ul>
+        <li>
+          <router-link to="/">
+            <strong>0</strong><span> HOME</span>
+          </router-link>
+        </li>
+        <li><strong>01</strong><span> DESTINATION</span></li>
+        <li><strong>02</strong><span> CREW</span></li>
+        <li><strong>03</strong><span> TECHNOLOGY</span></li>
+      </ul>
+    </nav>
+  </div>
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
 
 <style lang="scss" scoped>
-#mobile-menu{
-    font-family: 'Barlow Condensed';
-    background: rgba( 255, 255, 255, 4% );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7.5px );
-    -webkit-backdrop-filter: blur( 7.5px );
+#mobile-menu {
+  font-family: "Barlow Condensed";
+  background: rgba(255, 255, 255, 4%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-ul li{
-    @apply text-base py-2 text-white;
-    letter-spacing: 4px;
+ul li {
+  @apply text-base py-2 text-white;
+  letter-spacing: 4px;
 
-    strong{
-        @apply font-bold
-    }
+  strong {
+    @apply font-bold;
+  }
 
-    span{
-        @apply font-medium
-    }
- 
+  span {
+    @apply font-medium;
+  }
 }
 
 .fade-right-enter-active {
@@ -52,5 +54,4 @@ ul li{
   transform: translateX(20px);
   opacity: 0;
 }
-
 </style>

@@ -6,6 +6,8 @@
   <transition name="fade-right">
     <MobileMenu v-show="isMobileMenuOpen" />
   </transition>
+
+  <router-view></router-view>
 </template>
 
 <script>
@@ -24,6 +26,8 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 #app {
   @apply relative h-screen;

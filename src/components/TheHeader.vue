@@ -5,7 +5,7 @@
     <i
       :class="whichIcon"
       alt="menu-icon"
-      class="text-2xl md:hidden"
+      class="text-2xl md:hidden relative z-20"
       @click="$.emit('openMenu')"
     />
   </header>
