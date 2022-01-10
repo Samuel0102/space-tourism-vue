@@ -12,7 +12,11 @@
             <strong>01</strong><span>  DESTINATION</span>
           </router-link>
         </li>
-        <li><strong>02</strong><span> CREW</span></li>
+        <li>
+          <router-link to="/crew">
+            <strong>02</strong><span>  CREW</span>
+          </router-link>
+        </li>
         <li><strong>03</strong><span> TECHNOLOGY</span></li>
       </ul>
     </nav>

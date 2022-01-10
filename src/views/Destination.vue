@@ -1,6 +1,9 @@
 <template>
   <section id="destination" class="px-6 text-center text-white pb-10">
-    <span class="text-sm" id="page-title">PICK UP YOUR DESTINATION</span>
+    <PageTitle
+      :title="'Pick your destination'"
+      :numeration="'01'"
+    />
 
     <DestinationSlider :destinations="destinations" />
   </section>
@@ -8,8 +11,9 @@
 
 <script>
 import DestinationSlider from '../components/DestinationSlider.vue';
+import PageTitle from '../components/PageTitle.vue';
 export default {
-  components: { DestinationSlider },
+  components: { DestinationSlider, PageTitle },
   data() {
     return {
       destinations: [
@@ -68,14 +72,4 @@ export default {
 * {
   font-family: "Barlow Condensed";
 }
-
-#page-title {
-  letter-spacing: 2.7px;
-}
-
-#page-title:before {
-  content: "01  ";
-  opacity: 45%;
-}
-
 </style>

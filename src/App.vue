@@ -31,7 +31,7 @@ export default {
 
 #app {
   @apply relative;
-  background: url('assets/img/destination/background-destination-mobile.jpg');
+  background: url('assets/img/crew/background-crew-mobile.jpg');
   background-size: cover;
 }
 
