@@ -7,22 +7,22 @@ import Technology from '../views/Technology.vue'
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Home
   },
   {
     path: '/destination',
-    name: 'Destination',
+    name: 'destination',
     component: Destination
   },
   {
     path: '/crew',
-    name: 'Crew',
+    name: 'crew',
     component: Crew
   },
   {
     path: '/technology',
-    name: "Technology",
+    name: "technology",
     component: Technology
   }
 ]

@@ -1,13 +1,15 @@
 <template>
-  <TheHeader
-    @openMenu="isMobileMenuOpen = !isMobileMenuOpen"
-    :isMobileMenuOpen="isMobileMenuOpen"
-  />
-  <transition name="fade-right">
-    <MobileMenu v-show="isMobileMenuOpen" />
-  </transition>
+  <div id="appBG" :style="whichBG">
+    <TheHeader
+      @openMenu="isMobileMenuOpen = !isMobileMenuOpen"
+      :isMobileMenuOpen="isMobileMenuOpen"
+    />
+    <transition name="fade-right">
+      <MobileMenu v-show="isMobileMenuOpen" />
+    </transition>
 
-  <router-view></router-view>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
@@ -21,25 +23,31 @@ export default {
       isMobileMenuOpen: false,
     };
   },
+  computed: {
+    whichBG() {
+      return (
+        "background:" +
+        `url(${require(`@/assets/img/${this.$route.name}/background-${this.$route.name}-mobile.jpg`)})`
+      );
+    },
+  },
 };
 </script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
-#app {
+#appBG {
   @apply relative;
-  background: url('assets/img/technology/background-technology-mobile.jpg');
-  background-size: cover;
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
 }
 
-p{
+p {
   @apply leading-6 text-sm;
-  font-family: 'Barlow';
-  color: #D0D6F9;
+  font-family: "Barlow";
+  color: #d0d6f9;
 }
 
 hr {
