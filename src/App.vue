@@ -30,7 +30,15 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 #app {
-  @apply relative h-screen;
-  background: url("assets/img/home/background-home-mobile.jpg");
+  @apply relative;
+  background: url('assets/img/destination/background-destination-mobile.jpg');
+  background-size: cover;
 }
+
+p{
+  @apply leading-6 text-sm;
+  font-family: 'Barlow';
+  color: #D0D6F9;
+}
+
 </style>

@@ -7,7 +7,11 @@
             <strong>0</strong><span> HOME</span>
           </router-link>
         </li>
-        <li><strong>01</strong><span> DESTINATION</span></li>
+        <li>
+          <router-link to="/destination">
+            <strong>01</strong><span>  DESTINATION</span>
+          </router-link>
+        </li>
         <li><strong>02</strong><span> CREW</span></li>
         <li><strong>03</strong><span> TECHNOLOGY</span></li>
       </ul>
