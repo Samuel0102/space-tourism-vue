@@ -1,5 +1,5 @@
 # Space Tourism
-Desafio da plataforma Front-End Mentor de criação de uma SPA usando sliders e navegação fluída feito em VueJs
+Desafio da plataforma Front-End Mentor de criação de uma SPA usando sliders e navegação fluída feito em VueJs  
 :link: https://elegant-visvesvaraya-e1c7df.netlify.app/#/
 
 # Sobre o projeto
