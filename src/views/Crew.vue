@@ -1,5 +1,5 @@
 <template>
-    <section id="crew" class="px-6 pb-10 text-white text-center">
+    <section id="crew" class="px-6 pt-24 text-white text-center">
         <PageTitle
             :title="'Meet your crew'"
             :numeration="'02'"
@@ -70,5 +70,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+section{
+  background: url('../assets/img/crew/background-crew-mobile.jpg');
+}
 </style>

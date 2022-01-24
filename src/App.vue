@@ -3,11 +3,12 @@
     @openMenu="isMobileMenuOpen = !isMobileMenuOpen"
     :isMobileMenuOpen="isMobileMenuOpen"
   />
-  <transition name="fade-right">
+
+  <transition name="fade">
     <MobileMenu v-show="isMobileMenuOpen" />
   </transition>
 
-  <router-view></router-view>
+  <router-view class="pb-10"> </router-view>
 </template>
 
 <script>
@@ -29,9 +30,12 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
-#appBG {
-  @apply relative;
+* {
   font-family: "Barlow Condensed";
+}
+
+#app {
+  @apply relative;
 }
 
 p {

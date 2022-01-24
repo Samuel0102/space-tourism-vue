@@ -1,5 +1,5 @@
 <template>
-  <section id="destination" class="px-6 text-center text-white pb-10">
+  <section id="destination" class="px-6 pt-24 text-center text-white">
     <PageTitle
       :title="'Pick your destination'"
       :numeration="'01'"
@@ -69,4 +69,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+section{
+  background: url('../assets/img/destination/background-destination-mobile.jpg');
+}
 </style>

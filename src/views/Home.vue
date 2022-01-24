@@ -1,5 +1,5 @@
 <template>
-  <section class="home px-6 pt-24 pb-10 text-center absolute h-screen">
+  <section id="home" class="px-6 pt-24 text-center">
     <div id="text-content" class="text-white">
       <span class="uppercase text-xs">So, you want to travel to</span>
       <h1 class="text-7xl pt-5 pb-8">SPACE</h1>

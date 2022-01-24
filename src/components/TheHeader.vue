@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between items-center p-6 bg-transparent absolute w-full z-30">
+  <header id="header">
     <img src="../assets/img/shared/logo.svg" alt="site-logo" class="w-8" />
     <nav></nav>
     <i
@@ -16,16 +16,18 @@ export default {
   props: ["isMobileMenuOpen"],
   computed: {
     whichIcon() {
-      return !this.isMobileMenuOpen
-        ? "fas fa-bars"
-        : "fas fa-times";
+      return !this.isMobileMenuOpen ? "fas fa-bars" : "fas fa-times";
     },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-i{
-    color: #D0D6F9;
+i {
+  color: #d0d6f9;
+}
+
+#header {
+  @apply flex justify-between items-center p-6 bg-transparent absolute top-0 w-full z-30;
 }
 </style>

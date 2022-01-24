@@ -1,5 +1,5 @@
 <template>
-  <div id="mobile-menu" class="absolute z-10 top-0 right-0 w-9/12 h-full">
+  <div id="mobile-menu" class="absolute right-0 z-20 w-9/12 h-full">
     <nav class="mt-20 mx-8">
       <ul>
         <li>
@@ -32,6 +32,7 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+
 #mobile-menu {
   background: rgba(255, 255, 255, 4%);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -41,7 +42,6 @@ export default {};
 
 ul li {
   @apply text-base py-2 text-white;
-  font-family: "Barlow Condensed";
   letter-spacing: 4px;
 
   strong {
@@ -53,21 +53,14 @@ ul li {
   }
 }
 
-.fade-right-enter-active {
-  animation: slide 1s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
 }
 
-.fade-right-leave-active {
-  animation: slide 1s reverse;
-}
-
-@keyframes slide {
-  from{
-    @apply opacity-0;
-  }
-  to{
-    @apply opacity-100;
-  }
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 </style>
