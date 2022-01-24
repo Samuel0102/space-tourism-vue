@@ -41,6 +41,7 @@ export default {};
 
 ul li {
   @apply text-base py-2 text-white;
+  font-family: "Barlow Condensed";
   letter-spacing: 4px;
 
   strong {
@@ -53,16 +54,20 @@ ul li {
 }
 
 .fade-right-enter-active {
-  transition: all 0.3s ease-out;
+  animation: slide 1s;
 }
 
 .fade-right-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  animation: slide 1s reverse;
 }
 
-.fade-right-enter-from,
-.fade-right-leave-to {
-  transform: translateX(20px);
-  opacity: 0;
+@keyframes slide {
+  from{
+    @apply opacity-0;
+  }
+  to{
+    @apply opacity-100;
+  }
 }
+
 </style>

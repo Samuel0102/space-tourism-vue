@@ -1,15 +1,13 @@
 <template>
-  <div id="appBG" :style="whichBG">
-    <TheHeader
-      @openMenu="isMobileMenuOpen = !isMobileMenuOpen"
-      :isMobileMenuOpen="isMobileMenuOpen"
-    />
-    <transition name="fade-right">
-      <MobileMenu v-show="isMobileMenuOpen" />
-    </transition>
+  <TheHeader
+    @openMenu="isMobileMenuOpen = !isMobileMenuOpen"
+    :isMobileMenuOpen="isMobileMenuOpen"
+  />
+  <transition name="fade-right">
+    <MobileMenu v-show="isMobileMenuOpen" />
+  </transition>
 
-    <router-view></router-view>
-  </div>
+  <router-view></router-view>
 </template>
 
 <script>
@@ -22,14 +20,6 @@ export default {
     return {
       isMobileMenuOpen: false,
     };
-  },
-  computed: {
-    whichBG() {
-      return (
-        "background:" +
-        `url(${require(`@/assets/img/${this.$route.name}/background-${this.$route.name}-mobile.jpg`)})`
-      );
-    },
   },
 };
 </script>

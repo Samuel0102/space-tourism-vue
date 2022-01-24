@@ -1,11 +1,11 @@
 <template>
-  <header class="flex justify-between items-center p-6">
+  <header class="flex justify-between items-center p-6 bg-transparent absolute w-full z-30">
     <img src="../assets/img/shared/logo.svg" alt="site-logo" class="w-8" />
     <nav></nav>
     <i
       :class="whichIcon"
       alt="menu-icon"
-      class="text-2xl md:hidden relative z-20"
+      class="text-2xl md:hidden relative"
       @click="$.emit('openMenu')"
     />
   </header>

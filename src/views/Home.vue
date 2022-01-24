@@ -1,5 +1,5 @@
 <template>
-  <section class="home px-6 mt-5 pb-10 text-center">
+  <section class="home px-6 pt-24 pb-10 text-center absolute h-screen">
     <div id="text-content" class="text-white">
       <span class="uppercase text-xs">So, you want to travel to</span>
       <h1 class="text-7xl pt-5 pb-8">SPACE</h1>
@@ -24,6 +24,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+section{
+  background: url('../assets/img/home/background-home-mobile.jpg');
+}
+
 h1, #btn-text{
   font-family: 'Bellefair';
 }
